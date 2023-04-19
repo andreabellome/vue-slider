@@ -18,14 +18,14 @@
 
                 <div class="item">
 
-                    <img v-bind:src=" slides[0].image " v-bind:alt="slides[0].alternative" />
+                    <img v-bind:src=" slides[currActive].image " v-bind:alt="slides[currActive].alternative" />
 
                     <div class="text">
                         <h3>
-                            {{slides[0].title}}
+                            {{slides[currActive].title}}
                         </h3>
                         <p>
-                            {{slides[0].text}}
+                            {{slides[currActive].text}}
                         </p>
                     </div>
 

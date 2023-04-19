@@ -38,7 +38,7 @@ createApp({
                 alternative: 'Avengers'
             }
         ]
-
+        
       }
     },
     methods: {
