@@ -4,6 +4,7 @@ createApp({
       return {
         /* variables Vue 3 */
 
+        /* default current active image */
         currActive: 0,
         
         slides: [
@@ -38,7 +39,7 @@ createApp({
                 alternative: 'Avengers'
             }
         ]
-        
+
       }
     },
     methods: {
