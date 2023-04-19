@@ -45,5 +45,26 @@ createApp({
     methods: {
         /* functions Vue 3 */
 
+        prevClick(){
+
+            if( this.currActive == 0 ){
+                this.currActive = this.slides.length - 1
+            } else {
+                
+                this.currActive = this.currActive - 1;
+            }
+
+        },
+
+        nextClick(){
+
+            if ( this.currActive == this.slides.length - 1 ){
+                this.currActive = 0;
+            } else {
+                this.currActive = this.currActive + 1;
+            }
+
+        }
+
     }
 }).mount('#app')

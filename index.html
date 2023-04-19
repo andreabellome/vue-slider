@@ -33,14 +33,14 @@
 
                 <div class="thumbs">
 
-                    <div class="prev"></div>
-                    <div class="next"></div>
+                    <div class="prev" @click="prevClick"></div>
+                    <div class="next" @click="nextClick"></div>
 
                     <!-- iterate with Vue the divs in the thumbs -->
                     <div v-for=" (slide,index) in slides " v-bind:class=" (currActive == index) ? 'thumb active' : 'thumb' " class="thumb">
                         <img v-bind:src="slide.image" v-bind:alt="slide.alternative">
                     </div>
-                    
+
                 </div>
 
             </div>
