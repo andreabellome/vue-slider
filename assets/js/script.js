@@ -64,6 +64,10 @@ createApp({
                 this.currActive = this.currActive + 1;
             }
 
+        },
+
+        clickImg(index){
+            this.currActive = index;
         }
 
     }
